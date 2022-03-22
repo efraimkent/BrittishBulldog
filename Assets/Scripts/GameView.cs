@@ -38,7 +38,7 @@ public class GameView : MonoBehaviour {
         boardPieces.Add(enemy);
 
         // checks goal, creates prefab at goal position and changes colour to blue
-        var goal = Instantiate(BoardPiecePrefab, new Vector3(state.goal.x, state.goal.y, -0.1f), Quaternion.identity);
+        var goal = Instantiate(BoardPiecePrefab, new Vector3(state.goal.x, state.goal.y, -0.05f), Quaternion.identity);
         goal.sprite.color = Color.yellow;
         boardPieces.Add(goal);
     }
