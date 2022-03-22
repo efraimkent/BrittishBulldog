@@ -5,6 +5,7 @@ using UnityEngine;
 public class State {
     public CellType[] grid;
     public int gridWidth;
+    public int gridHeight => grid.Length / gridWidth;
     public Vector2Int player;
     public Vector2Int enemy;
     public Vector2Int goal;
